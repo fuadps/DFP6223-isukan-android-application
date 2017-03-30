@@ -1,0 +1,79 @@
+﻿Version=5.8
+NumberOfModules=5
+Module1=Starter
+Module2=activity_borang
+Module3=activity_peminjam
+Module4=activity_keputusan
+Module5=activity_login
+Build1=Default,b4a.example
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="19"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~
+IconFile=
+NumberOfFiles=6
+File1=dbsukan.db
+File2=layoutBorang.bal
+File3=layoutkeputusan.bal
+File4=layoutlogin.bal
+File5=layoutpeminjam.bal
+File6=Main.bal
+NumberOfLibraries=3
+Library1=core
+Library2=sql
+Library3=dialogs
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: i-Sukan
+	#VersionCode: 1
+	#VersionName: 
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: True
+#End Region
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+
+	Private btnPinjam As Button
+	Private btnAdm As Button
+	Private btnKeputusan As Button
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	'Do not forget to load the layout file created with the visual designer. For example:
+	Activity.LoadLayout("Main")
+	Activity.Title = "i-Sukan"
+	
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+
+Sub btnPinjam_Click
+	StartActivity(activity_borang)
+End Sub
+
+Sub btnAdm_Click
+	StartActivity(activity_login)
+End Sub
+
+Sub btnKeputusan_Click
+	StartActivity(activity_keputusan)
+End Sub
+
