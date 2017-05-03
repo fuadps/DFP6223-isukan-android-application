@@ -16,7 +16,7 @@ See at : [iSukan Web Application](https://github.com/fuadps/isukan/)
 i-sukan is a android application that reserves and books a sports good through online instead of fill the form on the paper manually.
 
 ## APK file download
-[isukan.apk](https://github.com/fuadps/isukan-android-application/blob/master/Objects/isukan.apk)
+[isukan.apk](https://github.com/fuadps/DFP6223-isukan-android-application/blob/master/Objects/isukan.apk)
 
 ## Notes
 This application is not responsive at all since it is made in static size.
