@@ -22,4 +22,4 @@ i-sukan is a android application that reserves and books a sports good through o
 This application is not responsive at all since it is made in static size.
 
 ## Update
-No update since B4A hard to understand and to explore since the community is not been helping too much.
+No update since B4A hard to understand and explore since the community is not been helping too much.
